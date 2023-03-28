@@ -1,0 +1,101 @@
+<!--Altered verion of index.html with the layout changed to a grid-based CSS one.-->
+
+<html>
+<head>
+<title>SketchView</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+    
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: cadetblue;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+ 
+.grid-container > .item2 {
+    padding-right: 30px;
+}    
+
+.grid-container > .item3 {
+    width: 700px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+    
+</style>
+</head>
+
+<body>
+
+<header class="title"><h1>SketchView - Sketchbook reviews</h1>
+
+<!--
+<nav class="navigation">
+  <a href="index.html">Home</a>
+  <a href="reviews_1.html">Reviews</a>
+  <a href="reviews_2.html">Other Reviews</a>
+  <a href="">About Us</a>
+</nav>
+-->
+</header>
+
+<section>
+
+<br>
+<!--<h1 class="heading">Main Page</h1>-->
+
+<div class="grid-container">
+  <div class="item1"><b>Main Page</b></div>
+    
+  <div class="item2">
+      <a href="index_grd_layout.html"><ul>Home</ul></a>
+      <a href="reviews_1_gallery.html"><ul>Reviews</ul></a>
+      <a href="reviews_2.html"><ul>Other Reviews</ul></a>
+      <a href=""><ul>About Us</ul></a>
+  </div>
+
+  <div class="item3">Welcome to Sketchview, a website dedicated to providing reviews of all kinds of sketchbooks, written by artists, for artists! Wether you're just starting out or are looking to try something new, our reviews will provide you with in-depth information that might just make your next choice of sketchbook the best one for you!</div>
+    
+  <div class="item4">Layout currently under construction!</div>
+    
+  <div class="item5">&copy; 2022 SketchView</div>
+</div>
+    
+    
+<!--
+<br>
+    
+<article class="intro">Welcome to Sketchview, a website dedicated to providing reviews of all kinds of sketchbooks, written by artists, for artists! Wether you're just starting out or are looking to try something new, our reviews will provide you with in-depth information that might just make your next choice of sketchbook the best one for you!</article>
+    
+<p>Layout currently under construction!</p>
+-->
+
+</section>
+
+
+<!--
+<footer class="footer">
+  <p>&copy; 2022 SketchView</p>
+</footer>
+-->
+
+</body>
+</html>
